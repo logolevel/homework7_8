@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('LeagueGothicRegular.eot');
+    src: url('LeagueGothicRegular.eot?#iefix') format('embedded-opentype'),
+         url('LeagueGothicRegular.woff2') format('woff2'),
+         url('LeagueGothicRegular.woff') format('woff'),
+         url('LeagueGothicRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('OpenSansLight.eot');
+    src: url('OpenSansLight.eot?#iefix') format('embedded-opentype'),
+         url('OpenSansLight.woff2') format('woff2'),
+         url('OpenSansLight.woff') format('woff'),
+         url('OpenSansLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('OpenSansExtrabold.eot');
+    src: url('OpenSansExtrabold.eot?#iefix') format('embedded-opentype'),
+         url('OpenSansExtrabold.woff2') format('woff2'),
+         url('OpenSansExtrabold.woff') format('woff'),
+         url('OpenSansExtrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

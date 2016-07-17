@@ -9,13 +9,19 @@ html {
   box-sizing: inherit;
   }
   /*our stiles*/
- .container {
+.container {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
  }
- a {
+.container--wide {
+ 	max-width: 1600px;
+ 	margin-top: 93px;
+ 	clear: both;
+ 	position: relative;
+}
+a {
  	transition: all 0.2s ease;
  }
  body {
@@ -44,9 +50,8 @@ html {
 }
 /*menu*/
 .menu {
-	margin-left: 200px;
 	float: right;
-	margin-top: 74px;
+	margin: 74px 0 20px 200px;
 }
 .menu__item {
 	display: inline-block;
@@ -68,35 +73,37 @@ html {
 }
 /*slider*/
 .header__slider {
-	clear: both;
-	margin-top: 262px;
+	height: 577px;
 }
-.slider-item {
+.header__slider-item {
 	position: relative;
 	height: 434px;
+	width: 960px;
+	margin: 0 auto;
 }
-.slide-description {
-	max-width: 518px;
-	padding-top: 94px;
+.header__slide-description {
+	width: 518px;
+	margin-top: 50px;
 }
-.slide-img {
+.header__slide-img {
 	width: 274px;
 	height: 434px;
 	position: absolute;
 	top: 0;
-	right: 69px;
+	right: 70px;
 }
-.slider-title {
+.slide-title {
 	color: #fff;
 	font-size: 60px;
 	letter-spacing: -0.5px;
+	padding-top: 95px;
 }
-.slider-subtitle {
+.slide-subtitle {
 	color: #edbfff;
 	font-size: 32px;
 	text-transform: uppercase;
 }
-.slider-paragraph {
+.slide-paragraph {
 	padding-top: 7px;
 	line-height: 23px;
 	color: #fff;
@@ -104,6 +111,7 @@ html {
 	letter-spacing: -0.05px;
 	font-family: "OpenSansLight", Arial, sans-serif;
 }
+/*owl-carousel-style edit*/
 .owl-nav div {
 	width: 30px;
 	height: 42px;
@@ -113,9 +121,29 @@ html {
 }
 .owl-prev {
 	background-position: 0 0;
-	left: -4px;
+	left: 0;
 }
 .owl-next {
 	background-position: 0 -52px;
-	right: -4px;
+	right: 0;
+}
+.owl-dots {
+	width: 624px;
+	margin: 0 auto;
+	text-align: right;
+	margin-top: 75px;
+}
+.owl-dot {
+	width: 17px;
+	height: 17px;
+	background-color: #000;
+	display: inline-block;
+	border-radius: 100%;
+	opacity: 0.3;
+	margin-left: 3px;
+}
+.owl-dot.active {
+	background: #37373d url(../img/sprite.png) no-repeat 0 0;
+	background-position: -1px -105px;
+	opacity: 1;
 }

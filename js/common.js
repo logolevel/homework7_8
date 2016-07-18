@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-	$('.header__slider').owlCarousel({
+	$('.slider').owlCarousel({
 		loop:true,
 		responsive:{
 			0:{

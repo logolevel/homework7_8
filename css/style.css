@@ -199,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 }
 .about__link-wrap {
 	text-align: right;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 .about__link {
 	font-size: 18px;
@@ -383,7 +383,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 
 
 /*section comments*/
-.comments {
+.colums {
 	height: 400px;
 	background-color: #ececec;
+	padding-top: 97px;
+}
+.colums__copyright,
+.colums__comments,
+.colums__news {
+  width: 33.33333333%;
+  float: left;
+  padding-right: 35px;
+}
+.colums__comments {
+	padding-left: 17px;
+	padding-right: 18px;
+}
+.colums__news {
+	padding-left: 35px;
+	padding-right: 5px;
+}
+.colums__logo {
+	width: 133px;
+	height: 37px;
+}
+.colums__copy {
+	font-size: 16px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	color: #c5c5c5;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	letter-spacing: -0.1px;
+}
+.colums__paragraph {
+	color: #787878;
+	font-size: 16px;
+	font-family: "OpenSansLight", Arial, sans-serif;
+	margin-top: 10px;
+	letter-spacing: -0.1px;
+	line-height: 23px;
+}
+.colums__title {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: -0.1px;
 }

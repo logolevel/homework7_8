@@ -23,6 +23,11 @@ html {
 .row {
   margin-right: -5px;
 }
+.clearfix:before {
+	content: " ";
+	display: block;
+	clear: both;
+}
 a {
  	transition: all 0.2s ease;
 }
@@ -118,28 +123,28 @@ a {
 	right: 70px;
 }
 /*owl-carousel-style edit*/
-.owl-nav div {
+.header .owl-nav div {
 	width: 30px;
 	height: 42px;
 	background-image: url(../img/sprite.png);
 	position: absolute;
 	top: 189px;
 }
-.owl-prev {
+.header .owl-prev {
 	background-position: 0 0;
 	left: 0;
 }
-.owl-next {
+.header .owl-next {
 	background-position: 0 -52px;
 	right: 0;
 }
-.owl-dots {
+.header .owl-dots {
 	width: 624px;
 	margin: 0 auto;
 	text-align: right;
 	margin-top: 75px;
 }
-.owl-dot {
+.header .owl-dot {
 	width: 17px;
 	height: 17px;
 	background-color: #000;
@@ -148,20 +153,20 @@ a {
 	opacity: 0.3;
 	margin-left: 3px;
 }
-.owl-dot.active {
+.header .owl-dot.active {
 	background: #37373d url(../img/sprite.png) no-repeat 0 0;
 	background-position: -1px -105px;
 	opacity: 1;
 }
 /*section about*/
-.text-shadow {
+.text-shadow-black {
 	text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 .about {
 	color: #fff;
 	height: 342px;
 	border-top: 1px solid #33253a;
-	border-bottom: 1px solid #0d151b;
+	border-bottom: 1px solid #fff;
 	background: #745083;
 background: -moz-linear-gradient(top,  #745083 0%, #33263a 100%);
 background: -webkit-linear-gradient(top,  #745083 0%,#33263a 100%);
@@ -227,3 +232,141 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	left: 0;
 }
 /*section updates*/
+.text-shadow-white {
+	text-shadow: 0.5px 0.9px 0 #fff;
+}
+.updates {
+	height: 485px;
+	padding-top: 100px;
+	border-bottom: 1px solid #e6e6e6;
+	background: #f9f9f9 url(../img/about-shadow.png) no-repeat top center;
+}
+.updates .slider--updates {
+	width: 46.66666667%;
+	height: 415px;
+	float: left;
+}
+.slider__item--updates {
+	width: 450px;
+	padding-left: 25px;
+}
+.slider__description--updates {
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	width: 421px;
+	height: 272px;
+	padding: 29px 30px 29px 38px;
+	margin: 0;
+	position: relative;
+}
+.slider__description--updates:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/corner.png);
+	position: absolute;
+	bottom: -20px;
+	right: 38px;
+}
+.slider__subtitle--update {
+	font-size: 30px;
+}
+.updates__sub-span {
+	letter-spacing: -0.75px;
+}
+.updates__span {
+	color: #454545;
+	letter-spacing: -0.75px;
+}
+.slider__paragraph--updates {
+	color: #454545;
+	font-size: 16px;
+	line-height: 24px;
+}
+.slider__img--updates {
+	width: 49px;
+	height: 51px;
+	position: absolute;
+	left: 0;
+	top: 18px;
+}
+/*owl*/
+.updates .owl-dots {
+	width: 18%;
+	margin: 0 auto;
+	margin-top: -138px;
+}
+.updates .owl-dot {
+	width: 17px;
+	height: 17px;
+	background-color: #fff;
+	display: inline-block;
+	border-radius: 100%;
+	opacity: 0.9;
+	border: 1px solid #e7e7e7;
+	margin-left: 3px;
+}
+.updates .owl-dot.active {
+	background: #fff url(../img/sprite.png) no-repeat 0 0;
+	background-position: 1px -132px;
+	opacity: 1;
+}
+/*recent*/
+.recent {
+	width: 46.66666667%;
+	margin-left: 6.66666667%;
+	height: 295px;
+	float: left;
+	padding-top: 30px;
+	color: #454545;
+}
+.recent__h2 {
+	margin-bottom: 17px;
+}
+.recent__item {
+	position: relative;
+	padding-left: 67px;
+	margin-bottom: 26px;
+}
+.recent__wrap-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+.recent__img {
+	border-radius: 50%;
+}
+.recent__title {
+	font-size: 16px;
+	font-family: "OpenSansExtrabold", Arial, sans-serif;
+	margin-bottom: 8px;
+}
+.recent__paragraph {
+	font-size: 16px;
+	font-family: "OpenSansLight", Arial, sans-serif;
+	letter-spacing: -0.1px;
+}
+.recent__link-wrap {
+	text-align: right;
+}
+.recent__link {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #454545;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.recent__link:hover {
+	text-decoration: underline;
+}
+/*section sponsors*/
+.sponsors {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	height: 118px;
+	background-color: #f9f9f9;
+}

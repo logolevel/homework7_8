@@ -380,13 +380,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 .sponsors__link:hover {
 	opacity: 0.5;
 }
-
-
 /*section comments*/
 .colums {
-	height: 400px;
+	height: 396px;
 	background-color: #ececec;
-	padding-top: 97px;
+	padding-top: 96px;
+	border-top: 1px solid #d8d8d8;
 }
 .colums__copyright,
 .colums__comments,
@@ -428,4 +427,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: -0.1px;
+}
+/*footer*/
+.footer {
+	height: 114px;
+	background-color: #616370;
+	background: url(../img/about-shadow.png) top center no-repeat,
+							url(../img/footer_.jpg) top center no-repeat;
+}
+.menu--footer {
+	float: left;
+	margin: 0;
+	margin-top: 47px;
+	width: 70%;
+}
+.menu__item--footer {
+	margin-right: 41px;
+}
+.menu__link--footer {
+	font-size: 20px;
+}
+.menu__link--footer:hover {
+	text-decoration: underline;
+}
+.footer__author {
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 54px;
+}
+.footer__title {
+	font-family: "OpenSansLight", Arial, sans-serif;
+}
+.footer__name {
+	font-family: "OpenSansExtrabold", Arial ,sans-serif;
 }

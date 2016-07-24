@@ -109,6 +109,9 @@
 .menu__item--footer {
 	margin-right: 42px !important;
 }
+.menu__link--footer {
+	text-decoration: none !important;
+}
 /*footer*/
 .footer {
 	height: 202px;
@@ -212,6 +215,11 @@
 	z-index: 9999;
 	border-radius: 7px;
 	opacity: 0.9;
+/*	background-color: #36293e;
+	border: 1px solid #051116;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);*/
+}
+.menu--list:hover {
 	background-color: #36293e;
 	border: 1px solid #051116;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -226,10 +234,15 @@
 .menu__item--list-current {
 	width: 246px;
 	display: block;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 .menu__link--list {
 	display: block;
 	padding: 8px 69px 8px;
+}
+.menu__link--list:hover {
+	background-color: #2b2231;
 }
 .nav ul:hover li{
 	display: block;

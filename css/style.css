@@ -55,6 +55,7 @@ a {
 	height: 400px;
 	background-color: #000;
 	opacity: 0.2;
+	filter: alpha(Opacity=20);
 	position: absolute;
 	top: 278px;
 	left: 0;
